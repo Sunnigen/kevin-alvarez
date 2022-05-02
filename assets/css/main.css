@@ -172,12 +172,46 @@ input, select, textarea {
 
 		}
 
+.to-top-btn {
+	position: fixed;
+	bottom: 5rem;
+	right: 5rem;
+	z-index: 100;
+	font-size: 400%;
+	will-change: transform;
+	transition: transform 450ms;
+}
+
+	.to-top-btn:hover {
+		position: fixed;
+		bottom: 5rem;
+		right: 5rem;
+		z-index: 100;
+		font-size: 400%;
+		transition: transform 125ms;
+		transform: translateY(-10px);
+	}
+
+	.to-top-btn i {
+		background-color: var(--color-tertiary);
+		color: white;
+		font-size: 4rem;
+		width: 6rem;
+		height: 6rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+		transition: all .3s;
+	}
+
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-/*		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);*/
+		/*		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);*/
 		color: #ffffff;
 		text-decoration: none;
 	}
@@ -2380,7 +2414,8 @@ input, select, textarea {
 	text-decoration: none;
 	border-bottom: none;
 	position: relative;
-
+	will-change: transform;
+	transition: transform 450ms;
 }
 
 		.icon:before {
@@ -2394,6 +2429,11 @@ input, select, textarea {
 			text-transform: none !important;
 			font-family: 'Font Awesome 5 Free';
 			font-weight: 400;
+		}
+
+		.icon:hover {
+			transition: transform 125ms;
+			transform: translateY(-10px);
 		}
 
 		.icon > .label {
@@ -3089,6 +3129,17 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+
+
+	}
+
+	.header-inner {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		align-items: center;
 	}
 
 		#header h1 {
@@ -3237,6 +3288,13 @@ input, select, textarea {
 		-webkit-transition: -webkit-filter 0.25s ease;
 		-ms-transition: -ms-filter 0.25s ease;
 		transition: filter 0.25s ease;
+	}
+
+	.menu-right {
+		display: flex;
+		justify-content: space-between;
+		float: right;
+		width: 50rem;
 	}
 
 	#menu {
@@ -3838,7 +3896,19 @@ input, select, textarea {
 				-ms-flex: 2;
 			}
 
-			.wrapper.spotlight:nth-child(2n - 1) .inner {
+		
+
+		.skill-box-small {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			color: var(--color-primary);
+		}
+
+		
+
+			.wrapper.spotlight:nth-child(2n) .inner {
 				-moz-flex-direction: row-reverse;
 				-webkit-flex-direction: row-reverse;
 				-ms-flex-direction: row-reverse;
