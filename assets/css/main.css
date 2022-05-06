@@ -3064,25 +3064,43 @@ input, select, textarea {
 			}
 
 			.features article .image {
-				border-radius: 5px 5px 0 0;
-				display: block;
-				margin-bottom: 1.75em;
-				margin-left: -1.75em;
-				margin-top: -1.75em;
-				position: relative;
-				width: calc(100% + 3.5em);
+		
 			}
 
-			.hvr-grow {
+		.features .overlap-pictures {
+			margin-left: -1.75em;
+			margin-top: -1.75em;
+/*			border-radius: 5px 5px 0 0;*/
+/*			margin-bottom: 1.75em;*/
+			width: calc(100% + 3.5em);
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			position: relative;
+		}
+
+			.features .overlap-pictures .overlap-pictures-top {
+				grid-column: 1 / span 12;
+				grid-row: 1;
+/*				padding-top:20%;*/
+				z-index: 1;
+
+			}
+
+			.features .overlap-pictures .overlap-pictures-bot {
+				grid-column: 1 / -1;
+				grid-row: 1;
+			}
+
+
+/*			.features .overlap-pictures .hvr-grow {
 				position: absolute;
-				margin-left: -1.75em;
-				top: 278px;
-				width: 26em;
-			}
+				width: 100%;
+				top: auto;
+			}*/
 
-			.hvr-grow:hover {
-                opacity:0%;
-			}
+				.features .overlap-pictures .hvr-grow:hover {
+					opacity: 0%;
+				}
 
 			.hvr-grow-second {
 				position: absolute;
