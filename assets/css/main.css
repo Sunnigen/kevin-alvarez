@@ -3049,17 +3049,17 @@ input, select, textarea {
 			justify-content: space-evenly;
 		}
 
-.work-experience .skill-box-small {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	color: var(--color-primary);
-}
+			.work-experience article .horizontal-container .skill-box-small {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: center;
+				color: var(--color-primary);
+			}
 
-	.work-experience .skill-box-small i {
-		font-size: 3rem;
-	}
+				.work-experience article .horizontal-container .skill-box-small i {
+					font-size: 3rem;
+				}
 
 /* Features */
 
