@@ -3033,6 +3033,34 @@ input, select, textarea {
 
 		}
 
+/* Work Experience */
+
+	.work-experience article {
+		padding: 1.75em 1.75em 0.1em 1.75em;
+		background-color: #2e3141;
+		border-radius: 5px;
+		margin: 1.5em 3em 1.5em 0;
+		width: calc(100% - 1.5em);
+	}
+
+		.work-experience article .horizontal-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+		}
+
+.work-experience .skill-box-small {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--color-primary);
+}
+
+	.work-experience .skill-box-small i {
+		font-size: 3rem;
+	}
+
 /* Features */
 
 	.features {
@@ -3089,6 +3117,7 @@ input, select, textarea {
 			.features .overlap-pictures .overlap-pictures-bot {
 				grid-column: 1 / -1;
 				grid-row: 1;
+
 			}
 
 
